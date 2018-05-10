@@ -1,0 +1,454 @@
+﻿/* GENERAL */
+
+body {
+	font-family: 'Roboto Slab', serif;
+	color: #777;
+}
+
+section {
+	padding: 60px 70px;
+	text-align: center;
+}
+
+section .section-header {
+	margin-bottom: 70px;
+	width: 100%;
+	text-align: center;
+}
+
+section .section-header h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+section h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+
+/* NAVBAR*/
+
+.progressbar {
+	position: fixed;
+	height: 10px;
+	width: 0;
+	top: 0;
+	z-index: 1000000000;
+	background-color: yellow;
+}
+
+#myBar {
+	width: 1%;
+	height: 30px;
+	background-color: green;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+}
+
+.navbar {
+	transition: all 0.4s ease;
+}
+
+#main-nav .navbar-brand {
+	font-family: 'Droid Serif', sans-serif;
+	font-size: 2em;
+	color: #fff;
+}
+
+#main-nav .nav-link {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	transition: all 0.5s;
+	color: #fff;
+}
+
+#main-nav .nav-link:hover {
+	color: #0ed8d6;
+}
+
+.scroll {
+	background-color: #434c7c;
+}
+
+
+
+
+/* HEADER */
+
+#main-header {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bootstrap-project-photos/img/header/pictures_on_the_wall.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: #fff;
+}
+
+#main-header .header-caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#main-header .header-caption h2 {
+	font-size: 3em;
+	font-family: 'Droid Serif', sans-serif;
+}
+
+#main-header .header-caption h1 {
+	font-size: 4em;
+	font-family: 'Droid Serif', sans-serif;
+}
+
+#main-header .header-caption .view-more {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #0ed8d6;
+	color: #fff;
+	padding: 15px 30px;
+	border: 1px solid #0ed8d6;
+}
+
+#main-header .header-caption .view-more:hover {
+	background: #fff;
+	color: #0ed8d6;
+}
+
+
+/* SECTION services */
+
+#services .fa {
+	font-size: 2.5em;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	background-color: #0ed8d6;
+	border: 1px solid #0ed8d6;
+	border-radius: 50%;
+	color: #fff;
+	transition: all 0.5s;
+	margin-bottom: 10px;
+}
+
+#services .fa:hover {
+	color: #0ed8d6;
+	background-color: #fff;
+	transform: rotate(360deg);
+}
+
+
+/* SECTION portfolio */
+
+/*
+#portfolio {
+	background-color: #f7f7f7;
+}
+
+#portfolio .bg{*/
+
+/*background-size: cover;
+	background-position: center;
+}
+
+#portfolio h3 {
+	padding-top: 20px;
+}
+
+#portfolio #fig_1 .bg{
+	height: 300px;
+	background-image: url(bootstrap-project-photos/img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio #fig_2 .bg{
+	height: 300px;
+	background-image: url(bootstrap-project-photos/img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio #fig_3 .bg{
+	height: 300px;
+	background-image: url(bootstrap-project-photos/img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio #fig_4 .bg{
+	height: 300px;
+	background-image: url(bootstrap-project-photos/img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio #fig_5 .bg{
+	height: 300px;
+	background-image: url(bootstrap-project-photos/img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio #fig_6 .bg{
+	height: 300px;
+	background-image: url(bootstrap-project-photos/img/portfolio/typing_on_laptop.jpg);
+}
+
+
+
+*/
+
+#portfolio {
+	background-color: #f7f7f7;
+}
+
+#portfolio figure {
+	background-color: #fff;
+}
+
+#portfolio figure figcaption h3 {
+	padding-top: 20px;
+}
+
+#portfolio figure figcaption p {
+	padding-bottom: 20px;
+}
+
+#portfolio .portfolio-image-bg {
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: all 1s;
+	cursor: cell;
+}
+
+#portfolio .portfolio-image {
+	overflow: hidden;
+}
+
+#portfolio .portfolio-bg-mask {
+	background-color: rgba(14, 216, 214, 0.7);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	color: #fff;
+}
+
+#portfolio .portfolio-image-bg:hover .portfolio-bg-mask {
+	opacity: 1;
+}
+
+#portfolio .portfolio-image-bg:hover {
+	transform: scale(1.5);
+}
+
+#portfolio #portfolio-img-1 {
+	background-image: url(bootstrap-project-photos/img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio #portfolio-img-2 {
+	background-image: url(bootstrap-project-photos/img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio #portfolio-img-3 {
+	background-image: url(bootstrap-project-photos/img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio #portfolio-img-4 {
+	background-image: url(bootstrap-project-photos/img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio #portfolio-img-5 {
+	background-image: url(bootstrap-project-photos/img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio #portfolio-img-6 {
+	background-image: url(bootstrap-project-photos/img/portfolio/typing_on_laptop.jpg);
+}
+
+
+
+
+/* SECTION meet our team */
+
+/*
+
+#meet img {
+	border-radius: 50%;
+}
+
+#meet figcaption h3 {
+	margin-top: 20px;
+}
+
+#meet .icons {
+	position: relative;
+	margin-bottom: 70px;
+}
+
+#meet .icons i{
+	border-radius: 50%;
+	font-size: 32px;
+	width: 50px;
+	height: 50px;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	transition: all 0.4s;
+	margin: 0 5px;
+}
+
+#meet .icons i:hover {
+	background-color: #0ed8d6;
+}
+*/
+
+#team img {
+	width: 100%;
+	/* pozwoli dopasować img do wielkości konternera */
+	border-radius: 50%;
+}
+
+#team .social-icons a {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	line-height: 40px;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+#team .social-icons a:hover {
+	background-color: #0ed8d6;
+}
+
+#team .team-description {
+	margin-top: 30px;
+}
+
+
+/* section CONTACT US */
+
+/*
+
+#contact {
+	background-image: linear-gradient(to bottom, rgba(3, 5, 29, 0.92), rgba(144, 71, 71, 0.88)), url(bootstrap-project-photos/img/footer/world-map.jpg);
+}
+
+#contact .section-header h2,
+#contact .section-header p {
+	color: #fff;
+}
+
+#contact input{
+	height: 50px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+
+*/
+
+#contact {
+	background-image: linear-gradient(to bottom, rgba(26, 26, 232, 0.9), rgba(212, 23, 23, 0.66)), url(bootstrap-project-photos/img/footer/world-map.jpg);
+}
+
+#contact .form-column {
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+#contact textarea {
+	height: 100%;
+}
+
+#contact input,
+#contact textarea {
+	text-transform: uppercase;
+	padding: 15px;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#contact input[type="submit"] {
+	background-color: #0ed8d6;
+	border: 1px solid #0ed8d6;
+	color: #fff;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+#contact input[type="submit"]:hover {
+	background-color: #fff;
+	color: #0ed8d6;
+}
+
+
+
+/* section FOOTER */
+
+/*
+footer{
+	display: flex;
+	font-size: 12px;
+	justify-content: space-around;
+}
+
+footer .social-icons i{
+	margin: 0 3px;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #222;
+}
+
+footer a i{
+	border-radius: 50%;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+}
+
+footer .links a{
+	color: #222;
+}
+*/
+
+footer {
+	padding: 10px 0;
+}
+
+footer .footer-item {
+	line-height: 50px;
+}
+
+#footer .footer-social-icons a {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	line-height: 40px;
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+#footer .footer-links {
+	/*	margin-right: 10px;*/
+	/* NIE DZIAŁA !!!!!!!!!*/
+}
